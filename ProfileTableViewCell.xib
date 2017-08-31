@@ -18,25 +18,25 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="141.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="6oP-b9-gUP">
-                        <rect key="frame" x="130" y="44" width="235" height="53.5"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6oP-b9-gUP">
+                        <rect key="frame" x="140" y="44" width="225" height="47.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isd-cJ-I7A">
-                                <rect key="frame" x="0.0" y="0.0" width="235" height="27"/>
+                                <rect key="frame" x="0.0" y="0.0" width="225" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6V-rb-3TP">
-                                <rect key="frame" x="0.0" y="27" width="235" height="26.5"/>
+                                <rect key="frame" x="0.0" y="24" width="225" height="23.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S7X-8r-hgU">
-                        <rect key="frame" x="15" y="31" width="100" height="80"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S7X-8r-hgU">
+                        <rect key="frame" x="25" y="31" width="100" height="80"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="80" id="AHf-Bf-c0h"/>
                             <constraint firstAttribute="width" constant="100" id="YVs-bJ-4J6"/>
@@ -44,9 +44,9 @@
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="6oP-b9-gUP" secondAttribute="bottom" constant="44" id="5TA-JP-qmF"/>
+                    <constraint firstAttribute="bottom" secondItem="6oP-b9-gUP" secondAttribute="bottom" constant="50" id="5TA-JP-qmF"/>
                     <constraint firstAttribute="bottom" secondItem="S7X-8r-hgU" secondAttribute="bottom" constant="31" id="J0U-e6-0RL"/>
-                    <constraint firstItem="S7X-8r-hgU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="KgY-EW-RbW"/>
+                    <constraint firstItem="S7X-8r-hgU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="KgY-EW-RbW"/>
                     <constraint firstItem="S7X-8r-hgU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="31" id="NYP-z5-j4k"/>
                     <constraint firstItem="6oP-b9-gUP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="44" id="Odk-GB-S70"/>
                     <constraint firstAttribute="trailing" secondItem="6oP-b9-gUP" secondAttribute="trailing" constant="10" id="TjN-Ar-eZE"/>

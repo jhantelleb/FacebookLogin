@@ -7,6 +7,7 @@ target 'DatePlayCodingExercise' do
 
   pod 'FacebookCore'
   pod 'FacebookLogin'
+  pod 'SDWebImage', '~> 4.0'
 
   target 'DatePlayCodingExerciseTests' do
     inherit! :search_paths

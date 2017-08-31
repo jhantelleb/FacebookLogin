@@ -16,6 +16,8 @@ final class ProfileTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        profileImageview.layer.cornerRadius =  4
+        profileImageview.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

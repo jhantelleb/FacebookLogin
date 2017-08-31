@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "033804F8FB237A1321BBEB72EBD689FE"
+               BlueprintIdentifier = "05F4B5005DD96B0850199B08D2203F83"
                BuildableName = "Pods_DatePlayCodingExercise.framework"
                BlueprintName = "Pods-DatePlayCodingExercise"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "033804F8FB237A1321BBEB72EBD689FE"
+            BlueprintIdentifier = "05F4B5005DD96B0850199B08D2203F83"
             BuildableName = "Pods_DatePlayCodingExercise.framework"
             BlueprintName = "Pods-DatePlayCodingExercise"
             ReferencedContainer = "container:Pods.xcodeproj">

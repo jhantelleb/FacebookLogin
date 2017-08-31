@@ -13,10 +13,15 @@ class ProfileDetailTableViewController: UITableViewController {
     
     var profiles: [ProfileModel] = []
     
+    @IBAction func goBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerXib()
         self.fetchProfile()
+        self.tableView.allowsSelection = false
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,7 +44,8 @@ class ProfileDetailTableViewController: UITableViewController {
         let profile = profiles[indexPath.row]
         cell.emailLabel?.text = String(format: "Email: %@", profile.email)
         cell.fullNameLabel?.text = String(format: "Full name: %@ %@", profile.firstName, profile.lastName)
-        print("For Profile View: \(profile)")
+        cell.profileImageview.addSubview(profile.profileImage)
+        
         return cell
     }
     
@@ -50,7 +56,7 @@ class ProfileDetailTableViewController: UITableViewController {
     }
     
     private func fetchProfile() {
-        var profileImage = ""
+        var imageURL = ""
         GraphRequest(graphPath: "/me", parameters: ["fields": "id, first_name, last_name, email, picture.type(large)"]).start { (response, result) in
             switch result {
             case .success(let response):
@@ -64,11 +70,11 @@ class ProfileDetailTableViewController: UITableViewController {
                 if let picture = response.dictionaryValue?["picture"] as? [String: Any] {
                     if let data = picture["data"] as? [String:Any]  {
                         guard let url = data["url"] as? String else { return }
-                        profileImage = url
+                        imageURL = url
                     }
                 }
                 //For testing:
-                let profile = ProfileModel(email: email, firstName: firstName, lastName: lastName, profileImage: profileImage)
+                let profile = ProfileModel(email: email, firstName: firstName, lastName: lastName, imageURL: imageURL)
                 
                 for _ in 1..<10 {
                     self.profiles.append(profile)

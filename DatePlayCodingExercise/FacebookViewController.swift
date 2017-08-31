@@ -15,8 +15,6 @@ class FacebookViewController: UIViewController, LoginButtonDelegate {
     var userProfile: ProfileModel?
     var accessToken: AccessToken?
     
-    var store = DataStore.sharedInstance
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let loginButton = LoginButton(readPermissions: Constants.readPermissions)
