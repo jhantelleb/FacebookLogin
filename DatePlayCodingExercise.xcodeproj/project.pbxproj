@@ -16,6 +16,9 @@
 		83016DE41F57D7A600D0CC35 /* ProfileDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83016DE31F57D7A600D0CC35 /* ProfileDetailTableViewController.swift */; };
 		83016DEA1F57D8A800D0CC35 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83016DE91F57D8A800D0CC35 /* ProfileModel.swift */; };
 		83016DED1F586A1400D0CC35 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83016DEC1F586A1400D0CC35 /* Constants.swift */; };
+		83016DF41F5875B100D0CC35 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83016DF21F5875B100D0CC35 /* ProfileTableViewCell.swift */; };
+		83016DF51F5875B100D0CC35 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83016DF31F5875B100D0CC35 /* ProfileTableViewCell.xib */; };
+		83016DF71F58852700D0CC35 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83016DF61F58852700D0CC35 /* DataStore.swift */; };
 		835A3FA61F5773F000746A18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A3FA51F5773F000746A18 /* AppDelegate.swift */; };
 		835A3FA81F5773F000746A18 /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A3FA71F5773F000746A18 /* FacebookViewController.swift */; };
 		835A3FAB1F5773F000746A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835A3FA91F5773F000746A18 /* Main.storyboard */; };
@@ -46,7 +49,10 @@
 		83016DDD1F57B0B100D0CC35 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/DatePlayCodingExercise-dqonbedmefhryxhaiupxvoivkufq/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		83016DE31F57D7A600D0CC35 /* ProfileDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetailTableViewController.swift; sourceTree = "<group>"; };
 		83016DE91F57D8A800D0CC35 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
-		83016DEC1F586A1400D0CC35 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		83016DEC1F586A1400D0CC35 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
+		83016DF21F5875B100D0CC35 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewCell.swift; path = ../ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		83016DF31F5875B100D0CC35 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileTableViewCell.xib; path = ../ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		83016DF61F58852700D0CC35 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		835A3FA21F5773F000746A18 /* DatePlayCodingExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatePlayCodingExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		835A3FA51F5773F000746A18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		835A3FA71F5773F000746A18 /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +119,7 @@
 		83016DE51F57D7AC00D0CC35 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				83016DF21F5875B100D0CC35 /* ProfileTableViewCell.swift */,
 				835A3FA71F5773F000746A18 /* FacebookViewController.swift */,
 				83016DE31F57D7A600D0CC35 /* ProfileDetailTableViewController.swift */,
 			);
@@ -122,6 +129,7 @@
 		83016DE61F57D7BA00D0CC35 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				83016DF31F5875B100D0CC35 /* ProfileTableViewCell.xib */,
 				835A3FAE1F5773F000746A18 /* LaunchScreen.storyboard */,
 				835A3FA91F5773F000746A18 /* Main.storyboard */,
 			);
@@ -131,6 +139,7 @@
 		83016DE71F57D7C100D0CC35 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83016DEC1F586A1400D0CC35 /* Constants.swift */,
 				835A3FAC1F5773F000746A18 /* Assets.xcassets */,
 				83016DD31F577F1B00D0CC35 /* DatePlayCodingExercise.entitlements */,
 				835A3FB11F5773F000746A18 /* Info.plist */,
@@ -149,7 +158,7 @@
 		835A3F991F5773F000746A18 = {
 			isa = PBXGroup;
 			children = (
-				83016DEC1F586A1400D0CC35 /* Constants.swift */,
+				83016DF61F58852700D0CC35 /* DataStore.swift */,
 				835A3FA41F5773F000746A18 /* DatePlayCodingExercise */,
 				835A3FA31F5773F000746A18 /* Products */,
 				34BC476600841F8505B6AF42 /* Pods */,
@@ -277,6 +286,7 @@
 				835A3FB01F5773F000746A18 /* LaunchScreen.storyboard in Resources */,
 				835A3FAD1F5773F000746A18 /* Assets.xcassets in Resources */,
 				835A3FAB1F5773F000746A18 /* Main.storyboard in Resources */,
+				83016DF51F5875B100D0CC35 /* ProfileTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,9 +397,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83016DF71F58852700D0CC35 /* DataStore.swift in Sources */,
 				83016DED1F586A1400D0CC35 /* Constants.swift in Sources */,
 				83016DE41F57D7A600D0CC35 /* ProfileDetailTableViewController.swift in Sources */,
 				835A3FA81F5773F000746A18 /* FacebookViewController.swift in Sources */,
+				83016DF41F5875B100D0CC35 /* ProfileTableViewCell.swift in Sources */,
 				835A3FA61F5773F000746A18 /* AppDelegate.swift in Sources */,
 				83016DEA1F57D8A800D0CC35 /* ProfileModel.swift in Sources */,
 			);
