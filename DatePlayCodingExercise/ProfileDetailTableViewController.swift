@@ -55,6 +55,7 @@ class ProfileDetailTableViewController: UITableViewController {
         tableView.register(nibName, forCellReuseIdentifier: Constants.reuseIdentifier)
     }
     
+    //MARK: Fetch Profile using GraphRequest
     private func fetchProfile() {
         var imageURL = ""
         GraphRequest(graphPath: "/me", parameters: ["fields": "id, first_name, last_name, email, picture.type(large)"]).start { (response, result) in
@@ -85,5 +86,4 @@ class ProfileDetailTableViewController: UITableViewController {
             }
         }
     }
-    
 }

@@ -7,13 +7,11 @@
 //
 
 import UIKit
-import FacebookCore
 import FacebookLogin
 
-class FacebookViewController: UIViewController, LoginButtonDelegate {
+class FacebookViewController: UIViewController {
     
     var userProfile: ProfileModel?
-    var accessToken: AccessToken?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +22,15 @@ class FacebookViewController: UIViewController, LoginButtonDelegate {
     }
     
     
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+}
+
+extension FacebookViewController: LoginButtonDelegate {
+    //MARK: Facebook Login
     func loginButtonDidLogOut(_ loginButton: LoginButton) {
         print("Log Out Pressed")
     }
@@ -35,16 +42,9 @@ class FacebookViewController: UIViewController, LoginButtonDelegate {
             print(error)
         case .cancelled:
             print("User cancelled login.")
-        case .success(_, _, let accessToken):
-            self.accessToken = accessToken
+        case .success(_, _, _): //No need to use any values
             self.performSegue(withIdentifier: "displayDetail", sender: nil)
         }
         print("Logged in!")
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
 }
-

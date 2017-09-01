@@ -11,9 +11,11 @@ import FacebookCore
 
 class Constants {
     
+    //MARK: Constants - SDK
     static let readPermissions: [ReadPermission] = [.publicProfile, .email]
     static let graphParameter: [String: Any] = ["fields": "id, first_name, last_name, email, picture.type(large)"]
     
+    //MARK: Constants - Table View Cell and Table View Controller
     static let xibName = "ProfileTableViewCell"
     static let reuseIdentifier = "displayDetail"
 }

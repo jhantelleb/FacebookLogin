@@ -179,9 +179,9 @@
 			children = (
 				835A3FA51F5773F000746A18 /* AppDelegate.swift */,
 				83016DE81F57D89600D0CC35 /* Models */,
-				83016DE71F57D7C100D0CC35 /* Supporting Files */,
 				83016DE51F57D7AC00D0CC35 /* View Controllers */,
 				83016DE61F57D7BA00D0CC35 /* Views */,
+				83016DE71F57D7C100D0CC35 /* Supporting Files */,
 			);
 			path = DatePlayCodingExercise;
 			sourceTree = "<group>";
@@ -543,6 +543,7 @@
 				CODE_SIGN_ENTITLEMENTS = DatePlayCodingExercise/DatePlayCodingExercise.entitlements;
 				DEVELOPMENT_TEAM = 3WL69W834X;
 				INFOPLIST_FILE = DatePlayCodingExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhantelleb.DatePlayCodingExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -558,6 +559,7 @@
 				CODE_SIGN_ENTITLEMENTS = DatePlayCodingExercise/DatePlayCodingExercise.entitlements;
 				DEVELOPMENT_TEAM = 3WL69W834X;
 				INFOPLIST_FILE = DatePlayCodingExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhantelleb.DatePlayCodingExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
