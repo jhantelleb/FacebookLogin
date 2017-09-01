@@ -1,9 +1,9 @@
 # Facebook Authentication
 
 ## Set Up
-Follow the steps on how to integrate the Facebook SDK thru the link below. I used Cocoapods to install the SDK in my app.
+Follow the steps on how to integrate the Facebook SDK thru the link below. I used Cocoapods to install the SDK in this project.
 
-For this exercise we will only use these APIs.
+We will only use these APIs for the exercise.
 * Facebook Login - use Facebook profile for user authentication
 * Facebook Core - to get the details for the user profile i.e. First Name, Last Name, Email and Profile Image via the Graph API
 
